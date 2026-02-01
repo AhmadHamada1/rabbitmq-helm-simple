@@ -20,8 +20,9 @@ spec:
     spec:
       tolerations:
         - key: "CriticalAddonsOnly"
-          operator: "Equal"
-          value: "true"
+          operator: "Exists"  # غير من Equal لـ Exists
+          effect: "NoSchedule"
+        - operator: "Exists"  # يقبل أي taint
           effect: "NoSchedule"
       containers:
         - name: rabbitmq
