@@ -1,0 +1,4 @@
+apiVersion: v2
+name: rabbitmq-dump
+description: RabbitMQ Chart Dump - Values come from ArgoCD Application
+version: 1.0.0
