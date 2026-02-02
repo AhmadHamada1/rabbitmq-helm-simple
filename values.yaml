@@ -24,3 +24,8 @@ resources:
   requests:
     memory: 256Mi
     cpu: 250m
+
+persistence:
+  enabled: true
+  size: 5Gi
+  storageClassName: "hcloud-volumes"
