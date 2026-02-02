@@ -1,0 +1,26 @@
+replicaCount: 1
+
+image:
+  repository: rabbitmq
+  tag: 3.13-management-alpine
+
+auth:
+  username: userrabbit
+  password: itk123@
+  erlangCookie: mysecretcookie
+
+service:
+  type: ClusterIP
+
+ingress:
+  enabled: true
+  hostname: rabbitmq-k8s.inthekloud.net
+  className: nginx
+
+resources:
+  limits:
+    memory: 512Mi
+    cpu: 500m
+  requests:
+    memory: 256Mi
+    cpu: 250m
