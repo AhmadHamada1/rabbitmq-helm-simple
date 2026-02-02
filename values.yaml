@@ -13,9 +13,8 @@ service:
   type: ClusterIP
 
 ingress:
-  enabled: true
-  hostname: rabbitmq-k8s.inthekloud.net
-  className: nginx
+  enabled: false
+
 
 resources:
   limits:
